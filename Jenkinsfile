@@ -2,6 +2,13 @@ pipeline {
     agent none
     stages {
 
+        stage('Test Webhook'){
+            agent any
+            steps {
+                echo 'Webhook'
+            }
+        }
+
         stage('Branch'){
             agent any
             steps {
